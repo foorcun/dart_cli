@@ -5,5 +5,9 @@ import 'container.dart';
 
 void main(List<String> arguments) {
   execute(
-      BosunCommand('containy', subcommands: [ContainerCommand()]), arguments);
+      BosunCommand(
+        'containy',
+        subcommands: [ContainerCommand(), ReadFile(), WriteFile()],
+      ),
+      arguments);
 }
